@@ -25,9 +25,16 @@
         class="collapse navbar-collapse"
       >
         <ul class="navbar-nav">
-          <li class="nav-link">
-            Renters
-          </li>
+          <router-link
+            tag="li"
+            to="/renter"
+            class="nav-item"
+          >
+            <a
+              class="nav-link"
+              href="/renter"
+            >Renters</a>
+          </router-link>
           <router-link
             tag="li"
             to="/landlord"
@@ -38,9 +45,16 @@
               href="/landlord"
             >Landlords</a>
           </router-link>
-          <li class="nav-link">
-            FAQs
-          </li>
+          <router-link
+            tag="li"
+            to="/faq"
+            class="nav-item"
+          >
+            <a
+              class="nav-link"
+              href="/faq"
+            >FAQs</a>
+          </router-link>
         </ul>
         <ul class="navbar-nav ml-auto">
           <router-link
