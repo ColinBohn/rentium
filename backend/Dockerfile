@@ -18,6 +18,6 @@ RUN composer install  --no-interaction --optimize-autoloader --prefer-dist \
     && rm -rf /home/www-data/.composer/cache \
 
     # create tables and sample data in database
-    && php artisan migrate --seed
+    && php artisan migrate --seed --force
 
 USER root
