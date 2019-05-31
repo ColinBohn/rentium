@@ -9,7 +9,7 @@
       Go Home
     </router-link>
     <img
-      class="h-50 fixed-bottom mx-auto"
+      class="h-50 fixed-bottom mx-auto ufo"
       src="./../../assets/img/taken.svg"
     >
   </div>
@@ -21,6 +21,9 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
+.ufo {
+  z-index: -1;
+}
 
 </style>
