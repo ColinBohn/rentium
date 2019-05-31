@@ -221,6 +221,9 @@ export default {
   },
 
   methods: {
+    /**
+     * Fires off event telling parent to submit form
+     */
     submit () {
       this.$emit('submit')
     }

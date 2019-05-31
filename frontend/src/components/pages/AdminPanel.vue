@@ -79,9 +79,7 @@ import InstantOfferService from './../../services/InstantOfferService'
 import PaginationButtons from './../parts/PaginationButtons'
 
 export default {
-  components: {
-    PaginationButtons
-  },
+  components: { PaginationButtons },
 
   data () {
     return {
@@ -98,6 +96,10 @@ export default {
   },
 
   methods: {
+    /**
+     * Retrieves a page of offers from the API
+     * @param {Number} page Page to fetch
+     */
     fetchPage (page) {
       InstantOfferService.fetchPage(page)
         .then(response => {

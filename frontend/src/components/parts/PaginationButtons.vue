@@ -45,6 +45,10 @@ export default {
   },
 
   computed: {
+    /**
+     * Generates an array of integers for pagination buttons
+     * @returns {Array} An array of ints
+     */
     pageButtons () {
       let pages = []
       console.log(Math.min(this.currentPage + 2, this.totalPages))
@@ -56,6 +60,10 @@ export default {
   },
 
   methods: {
+    /**
+     * Fires off event telling parent to update currect page
+     * @param {Number} page Page to retrieve
+     */
     setPage (page) {
       this.$emit('setPage', page)
     }
