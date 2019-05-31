@@ -1,0 +1,19 @@
+{
+    "extends": [
+        "standard",
+        "plugin:vue/recommended"
+    ],
+    "rules": {
+        "comma-dangle": [
+            "error",
+            "only-multiline"
+        ],
+        "brace-style": "off",
+        "valid-jsdoc": [
+            "error",
+            {
+                "requireReturn": false
+            }
+        ]
+    }
+}
